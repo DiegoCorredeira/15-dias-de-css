@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #121212;
+    font-family: sans-serif;
+    text-align: center;
+}
+.icone{
+    position: relative;
+    left: 50vw;
+    top: 50vh;
+    width: 0;
+    text-align: center;
+    cursor: pointer;
+
+}
+.barra{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: -10px;
+    background-color: #f98866;
+    width: 20px;
+    height: 20px;
+    margin: 5px 0;
+    border-radius: 10px;
+    transition: 0.5s;
+    animation: dope 1.5s ease-in-out 0s infinite;
+
+
+}
+.barra:nth-child(1){
+    animation-delay: 0s;
+}
+.barra:nth-child(2){
+    animation-delay: 0.15s;
+}
+.barra:nth-child(3){
+    animation-delay: 0.3s;
+}
+.barra:nth-child(4){
+    animation-delay: 0s;
+}
+
+
+@keyframes dope{
+    0% {
+        height: 20px;
+    }
+    50%{
+        height: 60px;
+    }
+    100%{
+        height: 20px;
+    }
+}
